@@ -1,0 +1,91 @@
+site_name: Agenda
+docs_dir: src
+site_dir: ../../_build/site/en/agenda/
+
+repo_name: ''
+repo_url: ''
+
+copyright: '&copy; 2018-2024 <a href="https://treehillstudio.com">Treehill Studio</a>'
+
+nav:
+  - Description: 'index.md'
+  - '01_Installation.md'
+  - Custom Manager Page:
+      - '02_Custom_Manager_Page/index.md'
+      - '02_Custom_Manager_Page/01_Overview.md'
+      - '02_Custom_Manager_Page/02_Events.md'
+      - '02_Custom_Manager_Page/03_Categories.md'
+      - '02_Custom_Manager_Page/04_Calendars.md'
+      - '02_Custom_Manager_Page/05_Locations.md'
+      - '02_Custom_Manager_Page/06_Feeds.md'
+      - '02_Custom_Manager_Page/07_Modules.md'
+      - '02_Custom_Manager_Page/08_Settings.md'
+  - '03_System_Settings.md'
+  - Snippets:
+      - '04_Snippets/index.md'
+      - '04_Snippets/01_AgendaList.md'
+      - '04_Snippets/02_AgendaCalendar.md'
+      - '04_Snippets/03_AgendaDetail.md'
+      - '04_Snippets/04_AgendaDetailIcal.md'
+      - '04_Snippets/05_AgendaCalendars.md'
+      - '04_Snippets/06_AgendaCategories.md'
+      - '04_Snippets/07_AgendaLocations.md'
+      - '04_Snippets/08_AgendaGetDate.md'
+      - '04_Snippets/09_AgendaEventGet.md'
+      - '04_Snippets/10_AgendaEventSet.md'
+      - '04_Snippets/11_AgendaSearch.md'
+      - '04_Snippets/12_AgendaCalcDate.md'
+      - '04_Snippets/13_AgendaCalcFirstFullWeek.md'
+      - '04_Snippets/14_AgendaCalcLastFullWeek.md'
+  - '05_Cronjob.md'
+  - '06_Extended_Fields.md'
+  - '07_Export_Import_Events.md'
+  - '08_System_Events.md'
+  - Tutorials:
+      - '09_Tutorials/Dynamic_Opening_Hours.md'
+      - '09_Tutorials/Frontend_Editing.md'
+      - '09_Tutorials/FullCalendar_Display.md'
+  - '10_FAQ.md'
+
+extra:
+  analytics:
+    provider: matomo
+    url: matomo.treehillstudio.com
+    site: 43
+  social:
+    link: https://github.com/Jako
+  shop:
+    link: https://modmore.com/agenda/
+
+theme:
+  name: material
+  custom_dir: ../../../../mkdocs-material-treehillstudio/material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  language: en
+  font: false
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.top
+
+markdown_extensions:
+  - footnotes
+  - tables
+  - admonition
+  - meta
+  - toc
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - glightbox
+  - search:
+      lang: en

@@ -1,0 +1,83 @@
+site_name: ConsentFriend
+docs_dir: src
+site_dir: ../../_build/site/en/consentfriend/
+
+repo_name: ''
+repo_url: ''
+
+copyright: '&copy; 2020-2024 <a href="https://treehillstudio.com">Treehill Studio</a>'
+
+nav:
+  - Description: 'index.md'
+  - '01_Installation.md'
+  - Functionality:
+      - '02_Functionality/01_Introduction.md'
+      - '02_Functionality/02_Default_Services.md'
+      - '02_Functionality/03_Contextual_Consent.md'
+      - '02_Functionality/Google_Maps.md'
+      - '02_Functionality/Google_reCAPTCHA.md'
+      - '02_Functionality/Google_Tag_Manager.md'
+      - '02_Functionality/Youtube_Videos.md'
+  - Custom Manager Page:
+      - '03_Custom_Manager_Page/index.md'
+      - '03_Custom_Manager_Page/01_Services.md'
+      - '03_Custom_Manager_Page/02_Purposes.md'
+      - '03_Custom_Manager_Page/03_Contexts.md'
+      - '03_Custom_Manager_Page/04_Statistics.md'
+      - '03_Custom_Manager_Page/05_Settings.md'
+  - '04_System_Settings.md'
+  - '05_Themes.md'
+  - '06_Dashboard_Widget.md'
+  - '07_Lexicon.md'
+  - '08_Cronjob.md'
+  - '09_FAQ.md'
+
+extra:
+  analytics:
+    provider: matomo
+    url: matomo.treehillstudio.com
+    site: 43
+  social:
+    link: https://github.com/Jako
+  shop:
+    link: https://modmore.com/consentfriend/
+  alternate:
+    - name: English
+      link: /en/consentfriend/
+      lang: en
+    - name: Deutsch
+      link: /de/consentfriend/
+      lang: de
+
+theme:
+  name: material
+  custom_dir: ../../../../mkdocs-material-treehillstudio/material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  language: en
+  font: false
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.top
+
+markdown_extensions:
+  - footnotes
+  - tables
+  - admonition
+  - meta
+  - toc
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - glightbox
+  - search:
+      lang: en

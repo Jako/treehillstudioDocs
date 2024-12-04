@@ -1,0 +1,91 @@
+site_name: Cursus
+docs_dir: src
+site_dir: ../../_build/site/en/cursus/
+
+repo_name: ''
+repo_url: ''
+
+copyright: '&copy; 2017-2024 <a href="https://treehillstudio.com">Treehill Studio</a>'
+
+nav:
+  - Description: 'index.md'
+  - '01_Installation.md'
+  - '02_Quick_Start.md'
+  - Custom Manager Page:
+      - '03_Custom_Manager_Page/index.md'
+      - '03_Custom_Manager_Page/01_Events.md'
+      - '03_Custom_Manager_Page/02_Participants.md'
+      - '03_Custom_Manager_Page/03_Trainers.md'
+      - '03_Custom_Manager_Page/04_Reminders.md'
+      - '03_Custom_Manager_Page/05_Mail_Monitor.md'
+      - '03_Custom_Manager_Page/06_Modules.md'
+      - '03_Custom_Manager_Page/07_Settings.md'
+  - '04_System_Settings.md'
+  - Snippets:
+      - '05_Snippets/index.md'
+      - '05_Snippets/01_CursusEventList.md'
+      - '05_Snippets/02_CursusEventCalendar.md'
+      - '05_Snippets/03_CursusEventDetail.md'
+      - '05_Snippets/04_CursusEventParticipantList.md'
+      - '05_Snippets/05_CursusEventParticipantDownload.md'
+      - '05_Snippets/06_CursusParticipantList.md'
+      - '05_Snippets/07_CursusParticipantGet.md'
+      - '05_Snippets/08_CursusTrainerList.md'
+      - '05_Snippets/09_CursusPriceRange.md'
+      - '05_Snippets/10_CursusEventGet.md'
+      - '05_Snippets/11_CursusEventSet.md'
+      - '05_Snippets/12_CursusEventsGet.md'
+      - '05_Snippets/13_CursusEventParticipantGet.md'
+      - '05_Snippets/14_CursusEventParticipantSet.md'
+      - '05_Snippets/15_CursusParticipantSet.md'
+      - '05_Snippets/16_CursusParticipantValidate.md'
+      - '05_Snippets/17_CursusParticipantRemove.md'
+      - '05_Snippets/18_CursusFormatPhone.md'
+  - '06_Cronjob.md'
+  - '07_Extended_Fields.md'
+  - '08_Export.md'
+  - '09_System_Events.md'
+  - '10_FAQ.md'
+
+extra:
+  analytics:
+    provider: matomo
+    url: matomo.treehillstudio.com
+    site: 43
+  social:
+    link: https://github.com/Jako
+  shop:
+    link: https://modmore.com/cursus/
+
+theme:
+  name: material
+  custom_dir: ../../../../mkdocs-material-treehillstudio/material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  language: en
+  font: false
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.top
+
+markdown_extensions:
+  - footnotes
+  - tables
+  - admonition
+  - meta
+  - toc
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - glightbox
+  - search:
+      lang: en
